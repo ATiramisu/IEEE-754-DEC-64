@@ -157,7 +157,7 @@ function decToBin(dec, num) {
     
             // Convert each chunk to hexadecimal
             let hexadecimal = "";
-            for (let i = 0; i < chunks.len; i++) {
+            for (let i = 0; i < chunks.length; i++) {
                 let chunk = chunks[i];
                 let dec = binToDec(chunk);
                 let hex = decToHex(dec);
@@ -167,9 +167,9 @@ function decToBin(dec, num) {
             return hexadecimal;
         }
     
-        function decToBin(dec, len) {
+        function decToBin(dec, length) {
             let bin = dec.toString(2);
-            while (bin.len < len) {
+            while (bin.length < length) {
                 bin = "0" + bin;
             }
             return bin;
