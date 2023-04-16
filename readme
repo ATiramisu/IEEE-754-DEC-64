@@ -1,6 +1,16 @@
 IEEE-754 Decimal-64 floating-point converter (including all special cases)
-• Input format: Decimal and base-10 (i.e., 127.0x10^5) – should handle more than 16 digits
-properly (provide options for the user to choose rounding method). Also, can support
-NaN input
-• Output: (1) binary output with space between section (2) its hexadecimal equivalent (3)
-with option to output in text file.
+
+• Input
+  - Type in the number you want to convert to IEEE-754 Decimal-64 Floating Point in the Decimalbase-10) text box.
+    - Input can be decimal (ex. 123, 234) or a base-10 number (ex. 12x10^4).
+
+• Output
+  - Pick the what type of rounding you want.
+      - Nearest
+      - Up
+      - Down
+      - Zero
+   - Select an output format
+     - Binary or Hexadecimal
+   - Press on convert to see the output. It will appear on the tex tbox below the convert button.
+   - You can also press the Save button to save a .txt file containing the answer in either binary of hexadecimal, depending on which output you have selected. 
