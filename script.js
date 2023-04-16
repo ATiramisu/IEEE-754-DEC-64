@@ -94,11 +94,20 @@ function decimalToBinary(dec, rounding) {
     }
     if (mantissa >= 1) {
         if (rounding === "up") {
-            mantissa = 1;
+            mantissa = Math.floor(mantissa);
+            if (mantissa % 2 !== 0) {
+                mantissa++;
+            }
         } else if (rounding === "down") {
-            mantissa = 0;
+            mantissa = Math.floor(mantissa);
+            if (mantissa % 2 !== 0) {
+                mantissa--;
+            }
         } else if (rounding === "zero") {
-            mantissa = 0;
+            mantissa = Math.floor(mantissa);
+            if (mantissa % 2 !== 0) {
+                mantissa--;
+            }
         } else {
             let diff1 = mantissa - Math.floor(mantissa);
             let diff2 = Math.ceil(mantissa) - mantissa;
